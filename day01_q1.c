@@ -4,9 +4,14 @@
 
 int main() {
 int a,b;
-a = 5;
-b = 9;
+
+printf("Enter value of a: ");
+scanf("%d", &a);
+
+printf("Enter value of b: ");
+scanf("%d", b);
+
 int c = a + b;
-printf("%d\n", c);
+printf("Sum of two number is: %d\n", c);
 return 0;
 }
