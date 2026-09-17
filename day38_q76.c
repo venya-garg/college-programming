@@ -1,5 +1,6 @@
 //Check if a matrix is symmetric.
 
+
 #include <stdio.h>
 
 int main() {
