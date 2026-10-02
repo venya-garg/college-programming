@@ -4,25 +4,14 @@
 
 int main()
 {
-int n, num = 1, den = 2;
-float sum = 0;
+  int n;
+  float sum = 1;
 
-printf("Enter the number of terms: ");
-scanf("%d", &n);
+  scanf("%d", &n);
 
-for (int i = 1; i <= n; i++)
-{
-if (i == 1)
-{
-sum = sum + 1;
-}
-else
-{
-num = num + 2;
-den = den + 2;
-sum = sum + (float)num / den;
-}
-}
+  for(int i = 2; i <= n; i++) {
+    sum = sum + (2 * i - 1)/(2 * i);
+  }
 
 printf("Sum = %.2f\n", sum);
 
